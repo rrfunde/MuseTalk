@@ -1,18 +1,62 @@
+# macOS
 .DS_Store
+
+# Logs
 *.log
+
+# IDEs
 .idea/
 .vscode/
+
+# Python
 *.pyc
-.ipynb_checkpoints
-results/
-models/
 **/__pycache__/
 *.py[cod]
 *$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# Jupyter
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# Project specific
+results/
+models/
 dataset/
+debug/
+exp_out/
+.gradio/
+
+# FFmpeg binaries
 ffmpeg*
 ffmprobe*
 ffplay*
-debug
-exp_out
-.gradio
+
+# Model files
+*.pkl
+*.pth
+*.ckpt
+*.safetensors
+
+# Media files (temporary/generated)
+*.mp4
+*.avi
+*.mov
+*.wav
+input_vide.mp4
+
+# Configuration files (user-specific)
+configs/inference/*_inference.yaml
+configs/inference/*_inference_*.yaml
+!configs/inference/example_inference.yaml
